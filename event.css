@@ -160,7 +160,7 @@
 
     /* =============== media queries ================== */
 
-@media(min-width:992px){
+/* @media(min-width:992px){
 
 }
 @media(min-width:768px) and (max-width:991px){
@@ -171,7 +171,8 @@
 }
 @media(min-width:480px) and (max-width:574px){
       
-}
+} */
+
 @media(max-width: 575px) 
 {
       .sec,.sec, .sec,.sec,.sec{
