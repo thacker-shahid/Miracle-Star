@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+* {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'Baloo Da 2', cursive;
+      /* font-family: 'Baloo Thambi 2', cursive;
+      font-family: 'Roboto', sans-serif; */
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .paragraph {
+      font-size: .9rem;
+      font-weight: 400;
+      color: #606060;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    h2::after{
+      content: "";
+      display: block;
+      margin: 10px auto 20px;
+      background: #ffc107;
+      height: 3px;
+      width: 170px;
+    }
+
+    .sec{
+      height: 100vh;
+      width: 100%;
+    }
+
+/* =========================== Home page ========================= */
+
+.bgimage{
+    background-image: url(../images/img1.jpeg);
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.welcome{
+      line-height: 4.5rem;
+      font-size: 3.5rem;
+      font-family: 'ubuntu';
+}
+
+.landingpagetext{
+      position: relative;  
+      top: 25%;
+}
+
+.line {
+      /* position: relative;
+      top: 50%; */
+      width: 7em;
+      margin: 1px auto;
+      line-height: 2rem;
+      border-right: 2px solid rgba(255, 255, 255, 0.75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;transform: translateY(-50%);
+}
+
+.anim-typewriter {
+      animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter{
+      from {
+            width: 0;
+      }
+      to {
+            width: 7em;
+      }
+}
+
+@keyframes blinkTextCursor {
+      from {
+            border-right-color: rgba(255, 255, 255, 0.75);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+
+/* ============================= About Us ========================== */
+
+#aboutus{
+      background-image: url(../images/aboutus\ background.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+}
+
+/* ================================ Our Team =============================== */
+
+
+.pic{
+      height: 125px;
+      width: 125px;
+      border-radius: 50%;
+}
+
+.teamrow{
+      position: relative;
+      top: 5%;
+}
+
+
+/* ======================== Contact Us ====================== */
+    .contactbutton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .contactbutton button {
+      border-color: #ffc107;
+      background-color: white;
+      color: black;
+      margin-top: -15px;
+      border-radius: 15px;
+    }
+
+    .contactbutton button:hover {
+      background-color: #ffc107;
+      color: white;
+      border-color: transparent;
+
+    }
+
+    ::placeholder {
+      font-style: italic;
+    }
+
+       /* ========================= Footer ====================== */
+
+    i {
+      color: white;
+      background: transparent;
+      padding: 5px;
+    }
+
+
+    /* =============== media queries ================== */
+
+@media(min-width:992px){
+
+}
+@media(min-width:768px) and (max-width:991px){
+      
+}
+@media(min-width:575px) and (max-width:767px){
+      
+}
+@media(min-width:480px) and (max-width:574px){
+      
+}
+@media(max-width: 575px) 
+{
+      .sec,.sec, .sec,.sec,.sec{
+            height: auto;
+            /* margin-top: 30px; */
+          }
+          .welcome{
+            line-height: 4.5rem;
+            font-size: 3rem;
+            font-family: 'ubuntu';
+      }
+          
+}
