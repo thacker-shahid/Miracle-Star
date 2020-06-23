@@ -9,16 +9,17 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>MiracleStar20's</title>
-  <link rel="stylesheet" href="event.css">
+
+  <!-- <link rel="stylesheet" href="../css/event.css"> -->
   <style>
     @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 
-* {
+    * {
       margin: 0px;
       padding: 0px;
       box-sizing: border-box;
-      font-family: 'Baloo Da 2', cursive;
+      /* font-family: 'Baloo Da 2', cursive; */
       /* font-family: 'Baloo Thambi 2', cursive;
       font-family: 'Roboto', sans-serif; */
     }
@@ -31,13 +32,14 @@
       font-size: .9rem;
       font-weight: 400;
       color: #606060;
+      font-family: 'Baloo Da 2', cursive;
     }
 
     h2 {
       font-family: 'Open Sans', sans-serif;
     }
 
-    h2::after{
+    h2::after {
       content: "";
       display: block;
       margin: 10px auto 20px;
@@ -46,37 +48,37 @@
       width: 170px;
     }
 
-    .sec{
+    .sec {
       height: 100vh;
       width: 100%;
     }
 
-/* =========================== Home page ========================= */
+    /* =========================== Home page ========================= */
 
-.bgimage{
-    background-image: url(img1.jpeg);
-    background-size: 100% 100%;
-    height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
+    .bgimage {
+      background-image: url(../images/img1.jpeg);
+      background-size: 100% 100%;
+      height: 100vh;
+      width: 100%;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
 
-.welcome{
+    .welcome {
       line-height: 4.5rem;
       font-size: 3.5rem;
       font-family: 'ubuntu';
-}
+    }
 
-.landingpagetext{
-      position: relative;  
+    .landingpagetext {
+      position: relative;
       top: 25%;
-}
+    }
 
-.line {
+    .line {
       /* position: relative;
       top: 50%; */
       width: 7em;
@@ -86,56 +88,61 @@
       font-size: 180%;
       text-align: center;
       white-space: nowrap;
-      overflow: hidden;transform: translateY(-50%);
-}
+      overflow: hidden;
+      transform: translateY(-50%);
+      font-family: 'Baloo Da 2', cursive;
+    }
 
-.anim-typewriter {
+    .anim-typewriter {
       animation: typewriter 4s steps(40) 1s 1 normal both,
-      blinkTextCursor 500ms steps(40) infinite normal;
-}
+        blinkTextCursor 500ms steps(40) infinite normal;
+    }
 
-@keyframes typewriter{
+    @keyframes typewriter {
       from {
-            width: 0;
+        width: 0;
       }
-      to {
-            width: 7em;
-      }
-}
 
-@keyframes blinkTextCursor {
+      to {
+        width: 7em;
+      }
+    }
+
+    @keyframes blinkTextCursor {
       from {
-            border-right-color: rgba(255, 255, 255, 0.75);
+        border-right-color: rgba(255, 255, 255, 0.75);
       }
+
       to {
-            border-right-color: transparent;
+        border-right-color: transparent;
       }
-}
+    }
 
-/* ============================= About Us ========================== */
+    /* ============================= About Us ========================== */
 
-#aboutus{
-      background-image: url(aboutus background.png);
+    #aboutus {
+      background-image: url(../images/aboutus\ background.png);
       background-repeat: no-repeat;
       background-size: 100% 100%;
-}
+      font-family: 'Baloo Da 2', cursive;
+    }
 
-/* ================================ Our Team =============================== */
+    /* ================================ Our Team =============================== */
 
 
-.pic{
+    .pic {
       height: 125px;
       width: 125px;
       border-radius: 50%;
-}
+    }
 
-.teamrow{
+    .teamrow {
       position: relative;
       top: 5%;
-}
+    }
 
 
-/* ======================== Contact Us ====================== */
+    /* ======================== Contact Us ====================== */
     .contactbutton {
       display: flex;
       align-items: center;
@@ -162,7 +169,7 @@
       font-style: italic;
     }
 
-       /* ========================= Footer ====================== */
+    /* ========================= Footer ====================== */
 
     i {
       color: white;
@@ -170,35 +177,61 @@
       padding: 5px;
     }
 
+    .notifyMe {
+      position: relative;
+      width: 25%;
+    }
 
     /* =============== media queries ================== */
 
-/* @media(min-width:992px){
-}
-@media(min-width:768px) and (max-width:991px){
-      
-}
-@media(min-width:575px) and (max-width:767px){
-      
-}
-@media(min-width:480px) and (max-width:574px){
-      
-} */
+    @media(min-width:992px) {}
 
-@media(max-width: 575px) 
-{
-      .sec,.sec, .sec,.sec,.sec{
-            height: auto;
-            /* margin-top: 30px; */
-          }
-          .welcome{
-            line-height: 4.5rem;
-            font-size: 3rem;
-            font-family: 'ubuntu';
+    @media(min-width:768px) and (max-width:991px) {
+      .sec,
+      .sec,
+      .sec,
+      .sec,
+      .sec {
+        height: auto;
+        /* margin-top: 30px; */
       }
-          
-}
+    }
 
+    @media(min-width:575px) and (max-width:767px) {
+      .sec,
+      .sec,
+      .sec,
+      .sec,
+      .sec {
+        height: auto;
+        /* margin-top: 30px; */
+      }
+    }
+
+    @media(min-width:480px) and (max-width:574px) {}
+
+    @media(max-width: 575px) {
+
+      .sec,
+      .sec,
+      .sec,
+      .sec,
+      .sec {
+        height: auto;
+        /* margin-top: 30px; */
+      }
+
+      .welcome {
+        line-height: 4.5rem;
+        font-size: 3rem;
+        font-family: 'ubuntu';
+      }
+
+      .notifyMe {
+        position: relative;
+        width: 60%;
+      }
+    }
   </style>
 </head>
 
@@ -255,8 +288,8 @@
       <h1 class="text-white welcome font-weight-bold">Welcome to Miracle Star 20's</h1>
 
       <h1 class="line anim-typewriter text-danger font-weight-bold">Coming Soon</h1>
-      <input type="text" placeholder="Enter your email" class="font-italic text-left ml-auto mr-auto form-control"
-        style="width: 25%;">
+      <input type="text" placeholder="Enter your email"
+        class="font-italic notifyMe text-left ml-auto mr-auto form-control">
       <button class="btn btn-warning  mt-3" style="font-family: 'ubuntu';">Notify me</button>
     </div>
   </div>
@@ -266,18 +299,25 @@
   <section id="aboutus" class="sec">
     <h2 class="font-weight-bold text-uppercase container text-center mt-5">About Us</h2>
     <p class="text-center paragraph container mt-5" style="font-size:x-large;">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Ipsa, deserunt consequuntur harum libero saepe iste nobis unde non recusandae inventore necessitatibus? Animi
-      necessitatibus harum officia error molestias voluptatem unde consequuntur?Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. A animi nobis facilis, beatae quos rerum officiis sed deserunt, ea eveniet iusto, veniam ad
-      maiores ratione alias illo blanditiis aliquid consequuntur? Quidem quisquam vero voluptas exercitationem alias
-      commodi rem vel id, quas, rerum, adipisci explicabo. In voluptas officiis olor sit amet consectetur adipisicing
-      elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Ipsa, deserunt consequuntur harum libero saepe iste nobis unde non recusandae inventore necessitatibus? Animi
-      necessitatibus harum officia error molestias voluptatem unde consequuntur?Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. A animi nobis facilis, beatae quos rerum officiis sed deserunt, ea eveniet iusto, veniam ad
-      maiores ratione alias illo blanditiis aliquid consequuntur? Quidem quisquam vero voluptas exercitationem alias
-      commodi rem vel id, quas, rerum, adipisci explicabo. In voluptas offic soluta iste illum natus reprehenderit.
+      A Talent Show is an event in which participants perform the arts of singing, dancing, acting, playing an
+      instrument, poetry, comedy or other activities to showcase their skills.
+      We are going to organize an event named <strong>“Miracle Star”</strong> in Bahraich. In which we give you an
+      opportunity to show your talent publicly. The show will be judged by some reputed and experianced judges on the
+      basis of your
+      performance and
+      there will be three winners in each domains (singing,dancing,mimicry etc.). The winners will be awarded with
+      exciting <strong>cash Prizes</strong> and other certifications.
+
+
+      The event will give you a perfect platform to show what Talent you have in you which
+      makes you unique. This event will be on district level in which you can show your hidden person of yourself to the
+      audience and
+      get the chance to become the upcoming future star. You can step out of your comfort zone to experience the gift
+      of life and to know your strength and weaknesses.
+
+
+
+
     </p>
   </section>
   <hr>
@@ -291,17 +331,17 @@
 
   <!-- =================== Sponsors ===================== -->
 
-  <section id="sponsors" class="sec">
+  <!-- <section id="sponsors" class="sec">
     <h2 class="font-weight-bold text-uppercase container text-center mt-5">Sponsors</h2>
   </section>
-  <hr>
+  <hr> -->
 
   <!-- =========================== Schedule ================= -->
 
-  <section id="schedule" class="sec">
+  <!-- <section id="schedule" class="sec">
     <h2 class="font-weight-bold text-uppercase container text-center mt-5">Schedule</h2>
   </section>
-  <hr>
+  <hr> -->
 
   <!-- ============================= Our Teams ============================= -->
 
@@ -313,58 +353,58 @@
       <div class="row">
 
         <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-block m-auto text-center">
-          <img src="amir.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3" height="200px"
+          <img src="../images/amir.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3" height="200px"
             width="200px">
           <h4 class="mt-2">Amiruddin Khan</h4>
           <p class="figure-caption paragraph font-weight-bold text-dark">Financial Head</p>
           <p class="paragraph"><i class="fa fa-envelope mr-2 text-dark"></i>amiruddinkhan@gmail.com</p>
-          <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 91617 04708</p>
+          <!-- <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 91617 04708</p> -->
         </div>
 
 
         <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-block m-auto text-center">
-          <img src="aquibimg.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3" height="200px"
+          <img src="../images/aquibimg.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3" height="200px"
             width="200px">
           <h4 class="mt-2">Mohd. Aquib</h4>
           <p class="figure-caption paragraph font-weight-bold text-dark">Management Head</p>
-          <p class="paragraph"><i class="fa fa-envelope mr-2  text-dark"></i>mohdaquib@gmail.com</p>
-          <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 8299379096</p>
+          <p class="paragraph"><i class="fa fa-envelope mr-2  text-dark"></i>mohdaquib710@gmail.com</p>
+          <!-- <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 8299379096</p> -->
         </div>
 
         <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-block m-auto text-center">
-          <img src="myimg.jpeg" alt="" class="figure-image pic img-fluid rounded-circle mt-3" height="200px"
+          <img src="../images/myimg.jpeg" alt="" class="figure-image pic img-fluid rounded-circle mt-3" height="200px"
             width="200px">
           <h4 class="mt-2">Tauheed Shahid</h4>
           <p class="figure-caption paragraph font-weight-bold text-dark">Technical Head</p>
           <p class="paragraph"><i class="fa fa-envelope mr-2  text-dark"></i>tauheedshahid@gmail.com</p>
-          <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 7398304351</p>
+          <!-- <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 7398304351</p> -->
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-block m-auto text-center">
-          <img src="syedimranimg.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3"
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 d-block m-auto text-center">
+          <img src="../images/syedimranimg.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3"
             height="200px" width="200px">
           <h4 class="mt-2">Syed Imran Hussain</h4>
           <p class="figure-caption paragraph font-weight-bold text-dark">Social media Head</p>
           <p class="paragraph"><i class="fa fa-envelope mr-2  text-dark"></i>syedimranhussain@gmail.com</p>
-          <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 8924836156</p>
+          <!-- <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 8924836156</p> -->
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-block m-auto text-center">
-          <img src="haroonimg.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3"
+        <!-- <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-block m-auto text-center">
+          <img src="../images/haroonimg.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3"
             height="200px" width="200px">
           <h4 class="mt-2">Haroon Ansari</h4>
           <p class="figure-caption paragraph font-weight-bold text-dark">Security Head</p>
           <p class="paragraph"><i class="fa fa-envelope mr-2  text-dark"></i>haroonansari@gmail.com</p>
           <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 9628825573</p>
-        </div>
+        </div> -->
 
-        <div class="col-lg-4 col-md-6 col-sm-6 col-12 d-block m-auto text-center">
-          <img src="zainulimg.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3"
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12 d-block m-auto text-center">
+          <img src="../images/zainulimg.jpg" alt="" class="figure-image pic img-fluid rounded-circle mt-3"
             height="200px" width="200px">
           <h4 class="mt-2">Zainul Abideen</h4>
           <p class="figure-caption paragraph font-weight-bold text-dark">Fine Arts Head</p>
-          <p class="paragraph"><i class="fa fa-envelope mr-2  text-dark"></i>zainulabideen@gmail.com</p>
-          <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 9873081022</p>
+          <p class="paragraph"><i class="fa fa-envelope mr-2  text-dark"></i>zabideen586@gmail.com</p>
+          <!-- <p class="paragraph"><i class="fa fa-2x fa-mobile mr-2 text-dark"></i>+91 9873081022</p> -->
         </div>
 
       </div>
@@ -421,11 +461,13 @@
           style="text-decoration: none; color: #ffc107;">Tauheed Shahid</a></p>
 
       <div class="icon" style="color: white;">
-        <a target="_blank" href="https://www.facebook.com/tauheed.shahid.1"><i class="fa fa-facebook-square"></i></a>
-        <a target="_blank" href="https://www.instagram.com/miraclestar20s/"><i class="fa fa-instagram"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/thacker-shahid-529361191/"><i
-            class="fa fa-linkedin"></i></a>
-        <a target="_blank" href="https://www.youtube.com/channel/UCdWcVntsuIHSDeRtUs_Cizg"><i class="fa fa-youtube"></i></a>
+        <a target="_blank" href="https://www.facebook.com/Miracle-Star-110901670668687/"><i
+            class="fa fa-facebook-square"></i></a>
+        <a target="_blank" href="https://www.instagram.com/_miraclestar_/"><i class="fa fa-instagram"></i></a>
+        <!-- <a target="_blank" href="https://www.linkedin.com/in/thacker-shahid-529361191/"><i
+            class="fa fa-linkedin"></i></a> -->
+        <a target="_blank" href="https://www.youtube.com/channel/UCdWcVntsuIHSDeRtUs_Cizg"><i
+            class="fa fa-youtube"></i></a>
       </div>
     </div>
   </footer>
